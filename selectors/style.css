@@ -1,0 +1,72 @@
+/* Types pof selectors :
+0. p (element selector)
+1. * (selects all)
+2. . (selects class)
+3. # (selects id)
+4. , (grouping selector)
+5. p.center(selects p with class name "center")
+
+*/
+
+p {
+  color: rgb(219, 52, 52);
+}
+
+p,
+li {
+  color: green;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* .special {
+  color: orange;
+  font-weight: bold;
+} */
+
+li.special,
+span.special {
+  color: orange;
+  font-weight: bold;
+}
+
+/* descendant combinator(space between two selectors) */
+li em {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+/* adjacent sibling combinator(+) */
+h1 + p {
+  font-size: 200%;
+}
+
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+article p span {
+  background-color: grey;
+  color: whitesmoke;
+}
+
+h2 + ul + p {
+  color: brown;
+}
+
+/* combining all selectors */
+body h1 + p.special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
