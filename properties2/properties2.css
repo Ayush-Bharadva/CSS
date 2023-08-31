@@ -1,0 +1,69 @@
+.center {
+  text-align: center;
+}
+.bg-color {
+  background-color: aliceblue;
+}
+.spacer {
+  height: 30px;
+  background-color: white;
+}
+a.link1:link {
+  color: red;
+}
+a.link1:visited {
+  color: green;
+}
+a.link1:hover {
+  color: hotpink;
+  background-color: lightgreen;
+  font-size: 20px;
+}
+a.link1:active {
+  color: blue;
+}
+/* link as buttons */
+a.link2:link,
+a.link2:visited {
+  background-color: rgb(161, 10, 255);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+a.link2:hover,
+a.link2:active {
+  background-color: red;
+}
+/* styling cursors */
+.cursors span {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+}
+
+/* styling table */
+#tbl-style {
+  border-collapse: collapse;
+  width: 100%;
+}
+#tbl-style td,
+#tbl-style th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+#tbl-style tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+#tbl-style tr:hover {
+  background-color: #bbb;
+}
+#tbl-style th {
+  background-color: rgb(67, 141, 67);
+  color: white;
+  font-size: 30px;
+}
