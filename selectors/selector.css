@@ -1,8 +1,8 @@
 /* Types pof selectors :
 0. p (element selector)
-1. * (selects all)
-2. . (selects class)
-3. # (selects id)
+1. * (universal selector)
+2. . (class selector)
+3. # (id selector)
 4. , (grouping selector)
 5. p.center(selects p with class name "center")
 
@@ -12,6 +12,7 @@ p {
   color: rgb(219, 52, 52);
 }
 
+/* grouping selector example */
 p,
 li {
   color: green;
@@ -26,6 +27,7 @@ li {
   font-weight: bold;
 } */
 
+/* class special of li tag and class special of span tag will be selected */
 li.special,
 span.special {
   color: orange;
@@ -33,40 +35,58 @@ span.special {
 }
 
 /* descendant combinator(space between two selectors) */
+/* em which is inside li will be selected in below css */
 li em {
   color: rebeccapurple;
   font-weight: bold;
 }
 
 /* adjacent sibling combinator(+) */
+/* element p which is exactly after h1 will be selected*/
 h1 + p {
   font-size: 200%;
 }
 
+/* below css property will be applied to link of anchor tag */
 a:link {
   color: pink;
 }
 
+/* below css property will be applied when link is visited once */
 a:visited {
   color: green;
 }
 
+/* below css property will be applied when link is hovered*/
 a:hover {
   text-decoration: none;
 }
 
+/* span tag which is inside p tag  which is inside article tag will be selected*/
 article p span {
   background-color: grey;
   color: whitesmoke;
 }
 
+/*only p tag which comes just after ul tag which comes just after h2 tag will be*/
 h2 + ul + p {
   color: brown;
 }
 
 /* combining all selectors */
+/* only p tag which has class special and which comes after h1 tag inside body will be selected */
 body h1 + p.special {
   color: yellow;
   background-color: black;
   padding: 5px;
+}
+
+/* Direct child selector */
+/* only p tag will be selected which is direct child of div */
+div > p {
+  color: magenta;
+}
+/* all p tags which comes inside div will be selected */
+div p {
+  background-color: blanchedalmond;
 }
