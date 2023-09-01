@@ -7,6 +7,7 @@
     <title>CSS Properties-II</title>
   </head>
   <body>
+    <!-- links css properties -->
     <div class="links bg-color">
       <h1 class="center">Styling Links with CSS</h1>
       <p class="center">
@@ -46,6 +47,7 @@
       </div>
     </div>
     <div class="spacer"></div>
+    <!-- table css properties -->
     <div class="table bg-color">
       <h1 class="center">
         CSS table styling properties are used to style below table
@@ -107,6 +109,104 @@
           <td>France</td>
         </tr>
       </table>
+    </div>
+    <div class="spacer"></div>
+    <!-- Positons Properties -->
+    <div class="position bg-color">
+      <h2 class="center">CSS positions property</h2>
+      <div class="relative">
+        <h3>Relative position example</h3>
+        <div class="box" id="one">One</div>
+        <div class="box" id="two">Two</div>
+        <div class="box" id="three">Three</div>
+        <div class="box" id="four">Four</div>
+      </div>
+      <div class="absolute">
+        <p class="positioned bg-color">
+          <span class="highlight"
+            >This is an Example of abolute positioning.</span
+          >
+          this paragraph is aligned to left by 90px whith position absolute
+        </p>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <!-- z-index css property -->
+    <!-- <div class="z-index bg-color">
+      <h2 class="center">Z-index property</h2>
+      <img
+        style="z-index: -1"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TtuDYEROYd4EK5JqXtPBuZXVFL-1SsDvGg&usqp=CAU"
+        alt="tree-img"
+      />
+      <p>
+        Because the image has a z-index of -1, it will be placed behind the
+        text.
+      </p>
+    </div> -->
+    <!-- <div class="spacer"></div> -->
+    <!-- float and clear property -->
+    <div class="float-clear">
+      <h2>Float Properties</h2>
+      <div class="clearfix">
+        <img
+          class="img2"
+          src="https://www.w3schools.com/css/pineapple.jpg"
+          alt="Pineapple"
+          width="170"
+          height="170"
+        />
+        This part explains the float and clear properties of css.The CSS float
+        property specifies how an element should float. The CSS clear property
+        specifies what elements can float beside the cleared element and on
+        which side.
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="pseudo-class bg-color">
+      <h2 class="center">CSS pseudo-classes examples</h2>
+      <form action="">
+        <h4>:checked example</h4>
+        <input type="radio" checked="checked" value="male" name="gender" />
+        Male<br />
+        <input type="radio" value="female" name="gender" /> Female<br />
+        <input type="checkbox" checked="checked" value="Bike" /> I have a
+        bike<br />
+        <input type="checkbox" value="Car" /> I have a car
+        <h4>:focus example</h4>
+        <label for="focus">name:</label>
+        <input type="text" id="focus" placeholder="Click to focus" />
+      </form>
+    </div>
+    <div class="spacer"></div>
+    <div class="pseudo-elements bg-color">
+      <h2 class="center">CSS pseudo-elements</h2>
+      <h3>::firstline pseudo-element</h3>
+      <p class="fl">
+        You can use the ::first-line pseudo-element to add a special effect to
+        the first line of a text. Some more text. And even more, and more, and
+        more, and more, and more, and more, and more, and more, and more, and
+        more, and more, and more. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Nam aperiam quidem neque velit, sed rem consequatur ad
+        ipsa odio quisquam necessitatibus excepturi laboriosam laborum a.
+        Voluptatibus totam, nisi laborum provident veritatis eos itaque
+        voluptates distinctio placeat dicta, officia ut enim.
+      </p>
+      <h3>::before pseudo-element</h3>
+      <p class="bfr">
+        ::before pseudo-element is used add specified content before contents of
+        tags
+      </p>
+      <h3>::after pseudo-element</h3>
+      <p class="aft">
+        ::after pseudo-element is used add specified content after contents of
+        tags
+      </p>
+      <h3>::selection pseudo-element</h3>
+      <p class="sel">
+        ::selection pseudo-element is used to give effect like highlight on
+        selected. Try to select some text in this paragraph
+      </p>
     </div>
   </body>
 </html>

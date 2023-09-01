@@ -1,3 +1,4 @@
+/* Properties covered : links, tables, float, clear */
 .center {
   text-align: center;
 }
@@ -7,6 +8,10 @@
 .spacer {
   height: 30px;
   background-color: white;
+}
+.highlight {
+  background-color: darkgreen;
+  color: yellow;
 }
 a.link1:link {
   color: red;
@@ -66,4 +71,74 @@ a.link2:active {
   background-color: rgb(67, 141, 67);
   color: white;
   font-size: 30px;
+}
+
+/* CSS Layout-positons */
+/* 1. Relative-position :*/
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+}
+
+#two {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background: blue;
+}
+/*2. Absolute position :*/
+.positioned {
+  position: absolute;
+  background-color: yellow;
+  border: 2px solid green;
+  left: 90px;
+}
+/* z-index css properties */
+/* div.z-index img {
+  position: relative;
+  z-index: -5;
+} */
+
+/* flaot and clear properties */
+.img2 {
+  float: right;
+}
+.clearfix {
+  border: 3px solid #4caf50;
+  padding: 5px;
+  content: "";
+  clear: both;
+  overflow: auto;
+}
+/* pseudo-classes properties */
+input:checked {
+  height: 40px;
+  width: 40px;
+}
+input:focus {
+  background-color: #4caf50;
+  color: white;
+}
+/* pseudo-elements */
+.pseudo-elements p.fl::first-line {
+  color: red;
+}
+.pseudo-elements p.bfr::before {
+  content: "content before html content";
+  color: red;
+}
+.pseudo-elements p.aft::after {
+  content: "content after html content";
+  color: red;
+}
+.pseudo-elements p.sel::selection {
+  background-color: lightgreen;
+  color: darkred;
 }
