@@ -1,0 +1,213 @@
+div {
+  background-color: aliceblue;
+}
+.spacer {
+  height: 25px;
+  background-color: white;
+}
+/* All Text Color properties */
+.color {
+  border: 2px solid black;
+}
+div.color h1 {
+  text-align: center;
+  color: blueviolet;
+}
+div.color .red {
+  color: red;
+}
+div.color .green {
+  color: rgb(56, 138, 56);
+}
+div.color .blue {
+  color: #2a2af2;
+}
+div.color .light-green {
+  color: rgba(0, 99, 34, 0.6);
+}
+div.color .purple {
+  color: hsl(250, 37%, 50%);
+}
+div.color .coffee {
+  color: hsla(0, 99%, 20%, 0.6);
+}
+/* Background-color Properties */
+/* 1. background-color property
+-> we can specify background color property similarly as color property using direct color value, using rgb, hex, rgba, hsl, hsla. background properties are mentioned below
+-> background-color,
+background-image,
+background-repeat,
+background-attachment,
+background-position,
+background (shorthand property)
+*/
+.bg-color {
+  border: 2px dotted red;
+}
+.bg-color h1 {
+  color: darkmagenta;
+  text-align: center;
+}
+.bg-color .bg-green {
+  background-color: darkolivegreen;
+  color: aliceblue;
+}
+/* background-image properties */
+.bg-image {
+  border: 2px dashed blue;
+  /* background-image: url("tree.jpg"); */
+  /* background-repeat: repeat-y; */
+  /* background-position: right top; */
+  /* background-attachment: scroll; */
+  /* Short habd for above css is written below */
+  background: url("tree.jpg") repeat-y right top scroll;
+}
+.bg-image h1 {
+  text-align: center;
+  color: crimson;
+}
+p {
+  font-size: 20px;
+}
+/* Border property css */
+.border h1 {
+  text-align: center;
+  color: cadetblue;
+}
+.border {
+  border: 10px double #e711d5;
+}
+.border p {
+  border-style: solid dashed double dotted;
+  width: 80%;
+  margin: 15px auto;
+}
+.highlight {
+  color: yellow;
+  background-color: green;
+}
+
+/* margin css properties */
+.margin {
+  border: 2px solid black;
+}
+.margin h1 {
+  text-align: center;
+}
+div.margin div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  /* margin : 100px 150px 100px 80px; (short-hand for above css)*/
+  background-color: lightblue;
+}
+.margin .auto {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+  color: black;
+}
+
+/* padding css properties */
+.padding .ex2 {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: wheat;
+  margin: auto;
+}
+.padding h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* outline-offset property */
+.outline h2 {
+  text-align: center;
+}
+.outline p {
+  background-color: yellow;
+  border: 1px solid black;
+  outline: 3px solid red;
+  margin: 30px;
+  outline-offset: 20px;
+}
+
+/* text properties css */
+/*1. When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers): */
+/*2. The "direction and unicode-bidi" properties can be used to change the text direction of an element: */
+/*3. The "vertical-align" property sets the vertical alignment of an element.
+vertical-align: baseline;
+vertical-align: text-top;
+vertical-align: text-bottom;
+vertical-align: sub;
+vertical-align: super;
+*/
+.txt-align h2 {
+  text-align: center;
+}
+.txt-align .justify {
+  width: 60%;
+  text-align: justify;
+  margin: auto;
+  color: brown;
+}
+.txt-align .direction {
+  direction: rtl;
+}
+
+/* text-decoration properties */
+/* shorthand-> text-decoration: underline red solid 5px; */
+/* utility class example below(this utility class is named as center and it will used to center texts) */
+.center {
+  text-align: center;
+}
+.txt-decor .overline {
+  text-decoration: overline red solid 5px;
+}
+.txt-decor .line-through {
+  text-decoration: line-through green solid 5px;
+}
+.txt-decor .underline {
+  text-decoration: underline blue solid 5px;
+}
+
+/* text-spacing properties :
+text-indent -> The text-indent property is used to specify the indentation of the first line of a text.
+letter-spacin -> The letter-spacing property is used to specify the space between the characters in a text.
+line-height -> The line-height property is used to specify the space between lines.
+word-spacing -> The word-spacing property is used to specify the space between the words in a text.
+white-space -> The white-space property specifies how white-space inside an element is handled.
+*/
+.txt-decor .txt-indent {
+  text-indent: 150px;
+}
+.txt-decor .ltr-space {
+  letter-spacing: 10px;
+}
+.txt-decor .ln-height {
+  line-height: 30px;
+}
+.txt-decor .wrd-space {
+  word-spacing: 25px;
+}
+/* text-shadow properties */
+.shadow1 {
+  text-shadow: 2px 2px;
+  font-size: 30px;
+}
+.shadow2 {
+  text-shadow: 2px 2px red;
+  font-size: 30px;
+}
+.shadow3 {
+  text-shadow: 2px 2px 5px red;
+  font-size: 30px;
+}
+.shadow4 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 30px;
+}
